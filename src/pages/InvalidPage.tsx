@@ -19,9 +19,6 @@ export default function InvalidPage() {
         className="flex flex-col gap-2"
       >
         <h1 className="text-xl font-bold text-gray-700">올바르지 않은 부적이에요</h1>
-        <p className="text-sm text-gray-400">
-          진짜 뜨개 부적에 폰을 갖다 대봐요 🍀
-        </p>
       </motion.div>
     </div>
   )
