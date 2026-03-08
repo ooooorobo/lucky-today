@@ -4,7 +4,7 @@ import InvalidPage from './pages/InvalidPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/lucky-today">
       <Routes>
         <Route path="/:uuid" element={<FortunePage />} />
         <Route path="/invalid" element={<InvalidPage />} />
