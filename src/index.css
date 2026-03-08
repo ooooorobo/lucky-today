@@ -1,0 +1,35 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  /* 브랜드 컬러 */
+  --color-clover: #4CAF7D;
+  --color-gold: #FFD700;
+
+  /* 배경 그라디언트 */
+  --color-bg-from: #F0FFF4;
+  --color-bg-to: #FFFDE7;
+
+  /* 점수 등급별 컬러 */
+  --color-score-low: #93C5FD;
+  --color-score-mid: #86EFAC;
+  --color-score-high: #FDE047;
+
+  /* 카드 */
+  --color-card-bg: #FFFFFF;
+
+  /* 폰트 */
+  --font-display: 'Gmarket Sans', 'Apple SD Gothic Neo', sans-serif;
+}
+
+@layer base {
+  html, body, #root {
+    min-height: 100dvh;
+  }
+
+  body {
+    font-family: var(--font-display);
+    background: linear-gradient(135deg, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
+    background-attachment: fixed;
+  }
+}
